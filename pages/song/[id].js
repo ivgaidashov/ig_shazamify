@@ -130,7 +130,7 @@ export default function Song({ trackDetails, videoDetails }) {
             >
               <a
                 href={`${trackDetails.hub.options[0].actions[0].uri}`}
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <BiPlayCircle color="pink" size="150px" />
               </a>
