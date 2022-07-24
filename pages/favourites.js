@@ -21,7 +21,7 @@ const backToHomepage = () => {
   Router.push("/");
 };
 
-export default function myFavTracks() {
+export default function MyFavTracks() {
   let [favTracks, setFavTracks] = useState([]);
 
   useEffect(() => {
