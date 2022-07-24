@@ -51,7 +51,7 @@ export default function TrackInfo(props) {
             paddingTop={2}
           >
             <SiApplemusic />
-            <a href={`${props.appleMusic}`} target="_blank">
+            <a href={`${props.appleMusic}`} target="_blank" rel="noreferrer">
               <Text cursor="pointer" marginLeft={1} color="pink.700">
                 Listen On Apple Music
               </Text>
