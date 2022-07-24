@@ -2,7 +2,7 @@ import Router from "next/router";
 import Head from "next/head";
 import NProgress from "nprogress";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import "quicksand";
+import "@fontsource/quicksand";
 
 import Layout from "../components/Layout";
 import { GlobalProvider } from "../context/GlobalState";
