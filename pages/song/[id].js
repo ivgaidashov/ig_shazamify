@@ -233,6 +233,7 @@ export default function Song({ trackDetails, videoDetails }) {
             return (
               <Box
                 as="iframe"
+                key={uuid()}
                 src={`https://www.youtube.com/embed/${video.id}`}
                 width="49%"
                 sx={{
