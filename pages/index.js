@@ -70,7 +70,7 @@ export default function Home({ chartsResponse }) {
       >
         {chartsResponse.map((position, index) => (
           <TrackInfo
-            img={position.images.coverarthq}
+            img={!!position.images?.coverarthq ? position.images.coverarthq : 'noImage' }
             position={index + 1}
             artist={position.subtitle}
             title={position.title}

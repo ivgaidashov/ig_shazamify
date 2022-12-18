@@ -22,7 +22,7 @@ export default function TrackInfo(props) {
       <Flex>
         <Link href={`/song/${props.id}`} passHref>
           <Image
-            src={props.img}
+            src={props.img === 'noImage' ? "/notfound.png" : props.img}
             width={200}
             height={200}
             alt={props.pic}

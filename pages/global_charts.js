@@ -126,7 +126,7 @@ export default function GlobalSharts() {
             .slice(0, 10)
             .map((position, index) => (
               <TrackInfo
-                img={position.images.coverarthq}
+                img={!!position.images?.coverarthq ? position.images.coverarthq : 'noImage' }
                 position={index + 1}
                 artist={position.subtitle}
                 title={position.title}
