@@ -8,7 +8,10 @@ import TrackInfo from "../components/TrackInfo";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 import { data } from "../utils/dummy.js";
 
-export default function Home({ chartsResponse }) {
+export default function Home({ chartsResponse }) 
+
+{console.log(chartsResponse);
+console.log('hey');
   return (
     <Box maxWidth="1280px" m="auto">
       <Box
@@ -87,10 +90,12 @@ export default function Home({ chartsResponse }) {
 
 export async function getStaticProps() {
   const charts = /*data;*/ await fetchApi(`${baseUrl}/v1/charts/world`);
+  console.log(charts)
 
   return {
     props: {
       chartsResponse: charts,
     },
+      revalidate: 86400,
   };
 }

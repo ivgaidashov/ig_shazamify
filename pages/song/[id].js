@@ -58,7 +58,6 @@ export default function Song({ trackDetails, videoDetails }) {
   const lyrics = trackDetails.sections[1].text
     ? trackDetails.sections[1].text
     : ["Lyrics Not Found"];
-  console.log(trackDetails);
 
   const singers = getShorter(
     trackDetails.artists.map((artist, key, arr) => {
