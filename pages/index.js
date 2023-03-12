@@ -96,6 +96,6 @@ export async function getStaticProps() {
     props: {
       chartsResponse: charts,
     },
-      revalidate: 86400,
+      revalidate: 3600,
   };
 }
